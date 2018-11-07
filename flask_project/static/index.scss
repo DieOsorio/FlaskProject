@@ -1,0 +1,16 @@
+$primary: #52f7;
+$secondary: #d5f2;
+
+header {
+  text-align: center;
+  h1 {
+    color: $primary;
+  }
+  h3 {
+    color: $secondary;
+  }
+}
+a {
+  text-decoration: none;
+  list-style-type: none;
+}

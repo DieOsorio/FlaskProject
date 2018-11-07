@@ -1,0 +1,20 @@
+{% extends "layout.html" %}
+
+{% block heading %}
+  Design
+{% endblock %}
+
+{% block content %}
+  <p>Here goes the design content</p>
+
+  <ul>
+    {% for note in notes %}
+      <li>{{ note }}</li>
+    {% endfor %}
+  </ul>
+
+  <form action="{{ url_for('index') }}" method="post">
+    <input type="text" name="note" placeholder="Enter Note Here" required>
+    <button>Add Note</button>
+  </form>
+{% endblock %}
